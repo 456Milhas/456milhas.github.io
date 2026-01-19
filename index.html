@@ -3,80 +3,171 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Seu Grupo de Milhas</title>
-  <meta name="description" content="Curadoria de promoções e estratégias de milhas. Alertas prontos e didáticos para você viajar pagando menos." />
+  <title>Central de Milhas — Alertas estratégicos, sem achismo</title>
+  <meta name="description" content="Grupo fechado de WhatsApp com curadoria de promoções e estratégias de milhas. Alertas claros, explicados, sem achismo." />
+
+  <meta property="og:title" content="Central de Milhas" />
+  <meta property="og:description" content="Alertas estratégicos de milhas, sem achismo. Grupo fechado no WhatsApp." />
+  <meta property="og:type" content="website" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="container header">
-    <a class="brand" href="#topo">
-      <span class="logo">✈️</span>
-      <span>Seu Grupo de Milhas</span>
-    </a>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#topo" aria-label="Central de Milhas - início">
+        <span class="brand-mark" aria-hidden="true">CM</span>
+        <span class="brand-name">Central de Milhas</span>
+      </a>
 
-    <nav class="nav">
-      <a href="#como-funciona">Como funciona</a>
-      <a href="#beneficios">Benefícios</a>
-      <a href="#planos">Planos</a>
-      <a href="#faq">FAQ</a>
-      <a class="btn btn-sm" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Entrar no grupo</a>
-    </nav>
+      <nav class="nav" aria-label="Navegação">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#planos">Acesso</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-sm" id="ctaTop" href="#" rel="noopener">Entrar no WhatsApp</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#planos">Acesso</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn" id="ctaMobile" href="#" rel="noopener">Entrar no WhatsApp</a>
+      </div>
+    </div>
   </header>
 
   <main id="topo">
     <!-- HERO -->
     <section class="container hero">
-      <div>
-        <p class="pill">Curadoria + Estratégia + Didática</p>
-        <h1>Viaje mais pagando menos com milhas — sem perder tempo caçando promoção.</h1>
+      <div class="hero-left">
+        <p class="pill">Grupo fechado • Curadoria humana • Sem spam</p>
+        <h1>Alertas estratégicos de milhas, <span class="grad">sem achismo</span>.</h1>
         <p class="lead">
-          Alertas estratégicos e explicações simples para você aproveitar oportunidades reais com confiança.
+          A Central de Milhas é um grupo fechado de WhatsApp com curadoria de promoções, transferências bonificadas e oportunidades reais —
+          sempre com contexto e explicação clara para você decidir com segurança antes de emitir.
         </p>
-        <div class="cta">
-          <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Quero entrar no grupo</a>
+
+        <div class="cta-row">
+          <a class="btn" id="ctaHero" href="#" rel="noopener">Entrar na Central de Milhas</a>
           <a class="btn btn-ghost" href="#como-funciona">Ver como funciona</a>
         </div>
 
-        <div class="badges">
-          <div class="badge">✅ Passagens e resgates</div>
-          <div class="badge">✅ Transferências bonificadas</div>
-          <div class="badge">✅ Onde pontuar mais</div>
+        <div class="mini-grid">
+          <div class="mini">
+            <div class="mini-title">✅ Passagens com milhas</div>
+            <div class="mini-text">Oportunidades com explicação e contexto.</div>
+          </div>
+          <div class="mini">
+            <div class="mini-title">✅ Transferências bonificadas</div>
+            <div class="mini-text">Quando faz sentido transferir e quando não.</div>
+          </div>
+          <div class="mini">
+            <div class="mini-title">✅ Menos ruído</div>
+            <div class="mini-text">Grupo organizado, só alertas relevantes.</div>
+          </div>
         </div>
       </div>
 
-      <div class="hero-card">
-        <h3>O que você recebe</h3>
-        <ul>
-          <li>Alertas prontos (com “vale ou não vale”)</li>
-          <li>Passo a passo para emitir/transferir</li>
-          <li>Curadoria sem propaganda disfarçada</li>
-          <li>Organização (sem bagunça no grupo)</li>
-        </ul>
-        <p class="muted">*Grupo fechado: apenas admins enviam mensagens.</p>
+      <div class="hero-right">
+        <div class="phone-card" role="img" aria-label="Exemplos de alertas">
+          <div class="phone-top">
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <span class="phone-title">Central de Milhas • Alertas</span>
+          </div>
+
+          <div class="bubble bubble-admin">
+            <div class="bubble-title">✈️ Alerta — Emissão boa</div>
+            <div class="bubble-text">GRU → BUE por <strong>9.000</strong> milhas + taxas. Jan/Fev. <span class="muted">[vale p/ quem viaja leve]</span></div>
+            <div class="bubble-meta">✅ Contexto • ⏱️ janela curta</div>
+          </div>
+
+          <div class="bubble bubble-admin">
+            <div class="bubble-title">💡 Transferência bonificada</div>
+            <div class="bubble-text"><strong>80%</strong> bônus (até 120% com clube). <span class="muted">Só vale se você já tem viagem planejada.</span></div>
+            <div class="bubble-meta">📌 Quando fazer • 📌 Quando evitar</div>
+          </div>
+
+          <div class="bubble bubble-note">
+            <div class="bubble-title">🧠 Sem achismo</div>
+            <div class="bubble-text">A gente explica o “porquê” para você ganhar autonomia.</div>
+          </div>
+
+          <div class="phone-cta">
+            <a class="btn btn-wide" id="ctaPhone" href="#" rel="noopener">Entrar no WhatsApp</a>
+            <p class="tiny muted">*Exemplos ilustrativos</p>
+          </div>
+        </div>
+
+        <div class="trust-row">
+          <div class="trust">
+            <div class="trust-k">🔒</div>
+            <div class="trust-t">Grupo fechado</div>
+          </div>
+          <div class="trust">
+            <div class="trust-k">🧾</div>
+            <div class="trust-t">Regras claras</div>
+          </div>
+          <div class="trust">
+            <div class="trust-k">📌</div>
+            <div class="trust-t">Contexto sempre</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- DOR -->
+    <!-- PARA QUEM É -->
     <section class="container section">
-      <div class="grid2">
+      <div class="split">
         <div>
-          <h2>Você está perdendo dinheiro quando emite sem estratégia.</h2>
+          <h2>Para quem é a Central de Milhas</h2>
           <p class="muted">
-            Promoções boas passam rápido, milhas vencem, e comparar tudo sozinho vira um segundo trabalho.
-            Aqui você recebe o que importa, com contexto.
+            Para quem quer usar milhas com mais inteligência, economizando tempo e evitando decisões ruins.
           </p>
+
+          <div class="cards2">
+            <div class="card">
+              <h3>✅ É para você se…</h3>
+              <ul class="list-check">
+                <li>Quer economizar em viagens com milhas</li>
+                <li>Não tem tempo de acompanhar promoções o dia todo</li>
+                <li>Quer entender <em>por que</em> uma oferta vale a pena</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>🚫 Não é para você se…</h3>
+              <ul class="list-x">
+                <li>Busca “milagre” ou promessas irreais</li>
+                <li>Quer atalhos ilegais / práticas proibidas</li>
+                <li>Não quer ler explicações, só “copiar e colar”</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <h3>Pra quem é</h3>
-          <ul class="check">
-            <li>Quer viajar mais sem complicação</li>
-            <li>Não tem tempo de monitorar promoções</li>
-            <li>Quer aprender de verdade (sem “truques”)</li>
-          </ul>
+
+        <div class="card highlight">
+          <h3>Nosso compromisso</h3>
+          <p>
+            Menos barulho, mais oportunidades. A Central é organizada para você receber alertas relevantes
+            com contexto e transparência — sem hype.
+          </p>
+          <div class="divider"></div>
+          <p class="muted small">
+            Dica: comece pelo básico. Em poucas semanas você já reconhece o que é bom de verdade.
+          </p>
         </div>
       </div>
     </section>
@@ -84,73 +175,84 @@
     <!-- COMO FUNCIONA -->
     <section id="como-funciona" class="container section">
       <h2>Como funciona</h2>
+      <p class="muted">Três passos simples, sem complicação.</p>
+
       <div class="cards3">
         <div class="card">
-          <h3>1) Entra no grupo</h3>
-          <p>Assinou, entrou. Acesso imediato via WhatsApp/Telegram.</p>
+          <div class="icon">1</div>
+          <h3>Você entra no grupo</h3>
+          <p>Grupo fechado no WhatsApp. Acesso rápido e organizado.</p>
         </div>
         <div class="card">
-          <h3>2) Recebe alertas</h3>
-          <p>Promoções + explicação prática: o que fazer, quando e por quê.</p>
+          <div class="icon">2</div>
+          <h3>Recebe alertas explicados</h3>
+          <p>Passagens, transferências e oportunidades com contexto: vale ou não vale.</p>
         </div>
         <div class="card">
-          <h3>3) Ganha autonomia</h3>
-          <p>Você aprende estratégias e passa a decidir com segurança.</p>
+          <div class="icon">3</div>
+          <h3>Decide com segurança</h3>
+          <p>Você entende o “porquê” e faz escolhas melhores antes de emitir.</p>
         </div>
       </div>
     </section>
 
     <!-- BENEFÍCIOS -->
     <section id="beneficios" class="container section">
-      <h2>Benefícios do grupo</h2>
+      <h2>O que você recebe</h2>
+
       <div class="cards3">
-        <div class="card"><h3>Alertas diários</h3><p>Sem ruído: só oportunidades que valem a pena.</p></div>
-        <div class="card"><h3>Estratégia</h3><p>Não é só oferta: é planejamento de viagem.</p></div>
-        <div class="card"><h3>Curadoria real</h3><p>Transparência e foco no seu benefício.</p></div>
+        <div class="card">
+          <h3>Alertas de emissão</h3>
+          <p>Oportunidades com milhas + contexto (pra quem vale, em quais cenários).</p>
+        </div>
+        <div class="card">
+          <h3>Transferências bonificadas</h3>
+          <p>Quando transferir, quando segurar e como evitar transferências “no impulso”.</p>
+        </div>
+        <div class="card">
+          <h3>Acúmulo inteligente</h3>
+          <p>Dicas práticas de onde pontuar mais (sem você virar refém de promoções).</p>
+        </div>
+      </div>
+
+      <div class="note card">
+        <strong>Importante:</strong> a Central de Milhas não promete “passagem grátis”.
+        O foco é te ajudar a tomar decisões racionais com milhas.
       </div>
     </section>
 
-    <!-- PLANOS -->
+    <!-- ACESSO / PLANOS -->
     <section id="planos" class="container section">
-      <h2>Planos</h2>
-      <p class="muted">Garantia de 7 dias: se não gostar, devolvemos 100%.</p>
+      <h2>Acesso</h2>
+      <p class="muted">
+        Por enquanto, o produto é o grupo. Você pode ajustar preço e checkout depois.
+      </p>
 
       <div class="pricing">
         <div class="card price">
-          <h3>Mensal</h3>
-          <p class="value">R$ 19,90</p>
-          <ul>
-            <li>Grupo exclusivo</li>
-            <li>Alertas + explicações</li>
-            <li>Suporte por mensagem</li>
+          <h3>Central de Milhas</h3>
+          <p class="value">Acesso ao grupo</p>
+          <ul class="bullets">
+            <li>Grupo fechado no WhatsApp</li>
+            <li>Alertas com explicação e contexto</li>
+            <li>Organização (sem spam)</li>
+            <li>Regras claras</li>
           </ul>
-          <a class="btn" href="#" target="_blank" rel="noopener">Quero mensal</a>
+          <a class="btn btn-wide" id="ctaPlans" href="#" rel="noopener">Entrar agora</a>
+          <p class="tiny muted">*Depois você adiciona planos/checkout se quiser.</p>
         </div>
 
-        <div class="card price featured">
-          <h3>Trimestral</h3>
-          <p class="value">R$ 35,90</p>
-          <ul>
-            <li>Tudo do mensal</li>
-            <li>Preço promocional fixo</li>
-            <li>Bônus de monitoramento*</li>
-          </ul>
-          <a class="btn" href="#" target="_blank" rel="noopener">Quero trimestral</a>
-        </div>
-
-        <div class="card price">
-          <h3>Anual</h3>
-          <p class="value">R$ 125,90</p>
-          <ul>
-            <li>Tudo do trimestral</li>
-            <li>Desconto em consultoria*</li>
-            <li>Prioridade em dúvidas</li>
-          </ul>
-          <a class="btn" href="#" target="_blank" rel="noopener">Quero anual</a>
+        <div class="card price subtle">
+          <h3>Transparência</h3>
+          <p class="muted">
+            Você sempre vai ver o motivo por trás das recomendações: quando faz sentido agir e quando é melhor esperar.
+          </p>
+          <div class="divider"></div>
+          <p class="muted small">
+            Sem afiliados escondidos, sem “pegadinha”, sem “achismo”.
+          </p>
         </div>
       </div>
-
-      <p class="muted small">*Ajuste os bônus conforme sua oferta real.</p>
     </section>
 
     <!-- FAQ -->
@@ -159,35 +261,63 @@
 
       <details class="faq">
         <summary>Isso é um curso?</summary>
-        <p>Não. É um grupo com alertas + aprendizado contínuo no dia a dia, com explicações rápidas.</p>
+        <p>Não. É um grupo com alertas e explicações rápidas no dia a dia. Você aprende por repetição e exemplos práticos.</p>
       </details>
+
       <details class="faq">
-        <summary>Sou iniciante, consigo acompanhar?</summary>
-        <p>Sim — a linguagem é simples e você aprende por repetição e exemplos práticos.</p>
+        <summary>Vou receber muita mensagem?</summary>
+        <p>Não. O grupo é organizado para evitar ruído: só alertas relevantes e comunicados essenciais.</p>
       </details>
+
       <details class="faq">
-        <summary>Posso cancelar quando quiser?</summary>
-        <p>Sim. E dentro de 7 dias você pode pedir reembolso integral (se você oferecer isso).</p>
+        <summary>Serve para qualquer aeroporto?</summary>
+        <p>As oportunidades variam, mas monitoramos opções nacionais e internacionais. Você decide conforme seu destino e datas.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Vocês emitem passagens por mim?</summary>
+        <p>No momento, o foco é a curadoria e a explicação dos alertas para você emitir com mais segurança e autonomia.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Tem alguma promessa de “passagem grátis”?</summary>
+        <p>Não. O objetivo é melhorar suas decisões e te ajudar a economizar, sem promessas irreais.</p>
       </details>
     </section>
 
     <!-- CTA FINAL -->
-    <section class="container section cta-final">
-      <div class="card cta-box">
-        <h2>Pronto pra transformar pontos em viagens?</h2>
-        <p class="muted">Entre agora e comece a receber alertas com estratégia e clareza.</p>
-        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Entrar no grupo</a>
+    <section class="container section">
+      <div class="card final-cta">
+        <h2>Pronto para usar milhas com mais inteligência?</h2>
+        <p class="muted">Entre no WhatsApp e comece a receber alertas com contexto e clareza.</p>
+        <div class="cta-row">
+          <a class="btn" id="ctaFinal" href="#" rel="noopener">Entrar na Central de Milhas</a>
+          <a class="btn btn-ghost" href="#faq">Ver FAQ</a>
+        </div>
+        <p class="tiny muted">Aviso: não somos vinculados a companhias aéreas ou programas de fidelidade.</p>
       </div>
     </section>
   </main>
 
-  <footer class="container footer">
-    <p class="muted">© <span id="year"></span> Seu Grupo de Milhas • Contato: seuemail@dominio.com</p>
-    <p class="muted small">Aviso: não somos afiliados a companhias aéreas ou programas de fidelidade.</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="brand footer-brand">
+          <span class="brand-mark" aria-hidden="true">CM</span>
+          <span class="brand-name">Central de Milhas</span>
+        </div>
+        <p class="muted small">© <span id="year"></span> Central de Milhas • Contato: seuemail@dominio.com</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#topo">Topo</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#planos">Acesso</a>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
